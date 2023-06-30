@@ -1,0 +1,84 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-06-01 14:20:24.564372",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "employee_name",
+  "grade",
+  "retention_days",
+  "retention_amount",
+  "medical_allowance",
+  "hra",
+  "amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee Name"
+  },
+  {
+   "default": "1",
+   "fieldname": "medical_allowance",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Medical Allowance"
+  },
+  {
+   "fieldname": "hra",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "HRA"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Amount"
+  },
+  {
+   "fieldname": "retention_days",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Retention Days"
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Grade"
+  },
+  {
+   "default": "0",
+   "fieldname": "retention_amount",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Retention Amount"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-06-03 10:10:10.325005",
+ "modified_by": "Administrator",
+ "module": "Allowance",
+ "name": "HRA and Medical Allowance Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

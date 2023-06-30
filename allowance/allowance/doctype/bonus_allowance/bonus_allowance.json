@@ -1,0 +1,93 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-06-27 12:14:55.251263",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "from_date",
+  "column_break_djgbx",
+  "to_date",
+  "column_break_6lfvs",
+  "bonus_percentage",
+  "section_break_wbdql",
+  "component_details",
+  "get_details",
+  "bonus_allowance_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "column_break_6lfvs",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "10",
+   "fieldname": "bonus_percentage",
+   "fieldtype": "Float",
+   "label": "Bonus Percentage"
+  },
+  {
+   "fieldname": "section_break_wbdql",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "component_details",
+   "fieldtype": "Table",
+   "label": "Component Details",
+   "options": "Component Details"
+  },
+  {
+   "fieldname": "get_details",
+   "fieldtype": "Button",
+   "label": "Get Details"
+  },
+  {
+   "fieldname": "bonus_allowance_details",
+   "fieldtype": "Table",
+   "label": "Bonus Allowance Details",
+   "options": "Bonus Allowance Details"
+  },
+  {
+   "fieldname": "column_break_djgbx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date"
+  },
+  {
+   "default": "Today",
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-27 14:26:49.523482",
+ "modified_by": "Administrator",
+ "module": "Allowance",
+ "name": "Bonus Allowance",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,118 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:RET- {employee_name} - {#####}",
+ "creation": "2023-06-01 10:24:43.868850",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "retention_section",
+  "employee",
+  "employee_name",
+  "column_break_0nlub",
+  "designation",
+  "department",
+  "retention_timeline_section",
+  "from_date",
+  "column_break_4qnsm",
+  "to_date",
+  "total_retention_days_section",
+  "total_days"
+ ],
+ "fields": [
+  {
+   "fieldname": "retention_section",
+   "fieldtype": "Section Break",
+   "label": "Retention"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employee",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name"
+  },
+  {
+   "fieldname": "column_break_0nlub",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee.designation",
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "Designation"
+  },
+  {
+   "fetch_from": "employee.department",
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department"
+  },
+  {
+   "fieldname": "retention_timeline_section",
+   "fieldtype": "Section Break",
+   "label": "Retention Timeline"
+  },
+  {
+   "default": "Today",
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date"
+  },
+  {
+   "fieldname": "column_break_4qnsm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_retention_days_section",
+   "fieldtype": "Section Break",
+   "label": "Total Retention Days"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_days",
+   "fieldtype": "Float",
+   "label": "Total Days"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-03 15:32:20.020083",
+ "modified_by": "Administrator",
+ "module": "Allowance",
+ "name": "Retention",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

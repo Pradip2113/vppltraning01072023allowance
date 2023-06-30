@@ -1,0 +1,132 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:Petrol Allowance - {date}",
+ "creation": "2023-05-27 12:15:58.936099",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "column_break_nsrju",
+  "petrol_rate",
+  "section_break_jnmgv",
+  "season_percentage",
+  "column_break_qj7ag",
+  "off_season_percentage",
+  "section_break_yhqj0",
+  "season",
+  "column_break_tkmm4",
+  "select_designation",
+  "column_break_ffqwt",
+  "get_details",
+  "fieldman_details_section",
+  "petrol_allowance_details"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "petrol_rate",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Petrol Rate",
+   "reqd": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_nsrju",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fieldman_details_section",
+   "fieldtype": "Section Break",
+   "label": "Petrol Allowance Details"
+  },
+  {
+   "fieldname": "section_break_yhqj0",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_tkmm4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "season",
+   "fieldtype": "Check",
+   "label": "Season ?"
+  },
+  {
+   "fieldname": "get_details",
+   "fieldtype": "Button",
+   "label": "Get Details"
+  },
+  {
+   "fieldname": "select_designation",
+   "fieldtype": "Table MultiSelect",
+   "label": "Select Designation",
+   "options": "Designation Details"
+  },
+  {
+   "fieldname": "column_break_ffqwt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "petrol_allowance_details",
+   "fieldtype": "Table",
+   "label": "Petrol Allowance Details",
+   "options": "Petrol Allowance Details"
+  },
+  {
+   "fieldname": "section_break_jnmgv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "100",
+   "fieldname": "season_percentage",
+   "fieldtype": "Float",
+   "label": "Season Percentage"
+  },
+  {
+   "fieldname": "column_break_qj7ag",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "60",
+   "fieldname": "off_season_percentage",
+   "fieldtype": "Float",
+   "label": "Off Season Percentage"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-01 13:43:24.327689",
+ "modified_by": "Administrator",
+ "module": "Allowance",
+ "name": "Petrol Allowance",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

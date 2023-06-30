@@ -1,0 +1,75 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:DA - {date}",
+ "creation": "2023-06-03 15:15:55.112731",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "column_break_kkq7n",
+  "da_amount",
+  "section_break_ogxpm",
+  "get_details",
+  "da_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "da_amount",
+   "fieldtype": "Float",
+   "label": "DA Amount"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "section_break_ogxpm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "get_details",
+   "fieldtype": "Button",
+   "label": "Get Details"
+  },
+  {
+   "fieldname": "da_details",
+   "fieldtype": "Table",
+   "label": "DA Details",
+   "options": "DA Details"
+  },
+  {
+   "fieldname": "column_break_kkq7n",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-03 15:35:56.175838",
+ "modified_by": "Administrator",
+ "module": "Allowance",
+ "name": "DA",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
