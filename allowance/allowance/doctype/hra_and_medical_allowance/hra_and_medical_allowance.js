@@ -10,3 +10,15 @@ frappe.ui.form.on('HRA and Medical Allowance', {
 		});
 	}
 });
+
+frappe.ui.form.on('HRA and Medical Allowance', {
+	calculate_payroll: function (frm) {
+		frm.clear_table("hra_and_medical_allowance_details")
+		frm.refresh_field("hra_and_medical_allowance_details")
+		frm.call({
+			method:'calculate_payroll',
+			doc: frm.doc,
+			payroll_date:frm.doc,
+		});
+	}
+});

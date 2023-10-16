@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:HRA-MA - {date}",
+ "autoname": "format:HRA-MA - {date} - {####}",
  "creation": "2023-06-01 14:14:25.279462",
  "default_view": "List",
  "doctype": "DocType",
@@ -9,13 +9,13 @@
  "engine": "InnoDB",
  "field_order": [
   "hra_and_medical_allowance_section",
-  "date",
-  "column_break_mymbp",
-  "medical_allowance",
-  "section_break_gmliq",
+  "from_date",
   "get_details",
+  "column_break_mymbp",
+  "date",
   "hra_and_medical_allowance_details_section",
-  "hra_and_medical_allowance_details"
+  "hra_and_medical_allowance_details",
+  "calculate_payroll"
  ],
  "fields": [
   {
@@ -27,21 +27,11 @@
    "default": "Today",
    "fieldname": "date",
    "fieldtype": "Date",
-   "label": "Date"
+   "label": "To Date"
   },
   {
    "fieldname": "column_break_mymbp",
    "fieldtype": "Column Break"
-  },
-  {
-   "default": "1300",
-   "fieldname": "medical_allowance",
-   "fieldtype": "Float",
-   "label": "Medical Allowance"
-  },
-  {
-   "fieldname": "section_break_gmliq",
-   "fieldtype": "Section Break"
   },
   {
    "fieldname": "get_details",
@@ -58,11 +48,21 @@
    "fieldtype": "Table",
    "label": "HRA and Medical Allowance Details",
    "options": "HRA and Medical Allowance Details"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date"
+  },
+  {
+   "fieldname": "calculate_payroll",
+   "fieldtype": "Button",
+   "label": "Checking"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-03 15:33:45.886553",
+ "modified": "2023-08-28 19:56:36.985461",
  "modified_by": "Administrator",
  "module": "Allowance",
  "name": "HRA and Medical Allowance",
